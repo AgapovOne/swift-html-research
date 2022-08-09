@@ -14,6 +14,10 @@
 		211E073C28A27BDD00CCBB04 /* html_researchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E073B28A27BDD00CCBB04 /* html_researchTests.swift */; };
 		211E074628A27BDD00CCBB04 /* html_researchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E074528A27BDD00CCBB04 /* html_researchUITests.swift */; };
 		211E074828A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */; };
+		211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075428A27C5900CCBB04 /* HTMLTextView.swift */; };
+		211E075828A27D6100CCBB04 /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = 211E075728A27D6100CCBB04 /* Atributika */; };
+		211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */; };
+		2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		211E074128A27BDD00CCBB04 /* html-researchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "html-researchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211E074528A27BDD00CCBB04 /* html_researchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITests.swift; sourceTree = "<group>"; };
 		211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		211E075428A27C5900CCBB04 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
+		211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAsyncTextView.swift; sourceTree = "<group>"; };
+		2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211E075828A27D6100CCBB04 /* Atributika in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,9 @@
 			children = (
 				211E072A28A27BDC00CCBB04 /* html_researchApp.swift */,
 				211E072C28A27BDC00CCBB04 /* ContentView.swift */,
+				211E075428A27C5900CCBB04 /* HTMLTextView.swift */,
+				211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */,
+				2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */,
 				211E072E28A27BDD00CCBB04 /* Assets.xcassets */,
 				211E073028A27BDD00CCBB04 /* Preview Content */,
 			);
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = "html-research";
+			packageProductDependencies = (
+				211E075728A27D6100CCBB04 /* Atributika */,
+			);
 			productName = "html-research";
 			productReference = 211E072728A27BDC00CCBB04 /* html-research.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 211E071E28A27BDC00CCBB04;
+			packageReferences = (
+				211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */,
+			);
 			productRefGroup = 211E072828A27BDC00CCBB04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */,
+				2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */,
+				211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */,
 				211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */,
 				211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */,
 			);
@@ -583,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/psharanda/Atributika.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		211E075728A27D6100CCBB04 /* Atributika */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */;
+			productName = Atributika;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 211E071F28A27BDC00CCBB04 /* Project object */;
 }
