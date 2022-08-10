@@ -17,6 +17,7 @@
 		211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075428A27C5900CCBB04 /* HTMLTextView.swift */; };
 		211E075828A27D6100CCBB04 /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = 211E075728A27D6100CCBB04 /* Atributika */; };
 		211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */; };
+		2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */; };
 		2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		211E075428A27C5900CCBB04 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
 		211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAsyncTextView.swift; sourceTree = "<group>"; };
+		2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAssign.swift; sourceTree = "<group>"; };
 		2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLExamples.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				211E075428A27C5900CCBB04 /* HTMLTextView.swift */,
 				211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */,
 				2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */,
+				2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */,
 				211E072E28A27BDD00CCBB04 /* Assets.xcassets */,
 				211E073028A27BDD00CCBB04 /* Preview Content */,
 			);
@@ -279,6 +282,7 @@
 				211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */,
 				211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */,
 				211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */,
+				2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

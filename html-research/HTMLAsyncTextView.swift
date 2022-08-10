@@ -11,10 +11,14 @@ import WebKit
 
 final class HTMLAsyncTextView: UIView {
 
+    typealias HTMLLoader = (String, @escaping (NSAttributedString) -> Void) -> Void
+    let loader: HTMLLoader
+
     let textView = UITextView()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(loader: @escaping HTMLLoader) {
+        self.loader = loader
+        super.init(frame: .zero)
         setup()
     }
 
@@ -43,36 +47,23 @@ final class HTMLAsyncTextView: UIView {
 
     private func setText() {
         let now = Date.now
-        NSAttributedString.loadFromHTML(
-            string: text,
-            completionHandler: { string, keys, error in
-                self.textView.attributedText = string
-                let size = self.textView.systemLayoutSizeFitting(
-                    CGSize(
-                        width: self.frame.width,
-                        height: UIView.layoutFittingCompressedSize.height
-                    ),
-                    withHorizontalFittingPriority: .required,
-                    verticalFittingPriority: .fittingSizeLevel
-                )
-
-                let mutable = NSMutableAttributedString(attributedString: self.textView.attributedText)
-                mutable.append(NSAttributedString(string: "\n\(size)"))
-
-                mutable.append(NSAttributedString(string: "\n\(now.distance(to: .now))"))
-
-                self.textView.attributedText = mutable
-
-            }
-        )
+        loader(text) { string in
+            assign(
+                string,
+                to: self.textView,
+                start: now,
+                width: self.frame.width
+            )
+        }
     }
 }
 
 struct AsyncTextView: UIViewRepresentable {
     let text: String
+    let loader: HTMLAsyncTextView.HTMLLoader
 
     func makeUIView(context: Context) -> HTMLAsyncTextView {
-        let v = HTMLAsyncTextView(frame: .zero)
+        let v = HTMLAsyncTextView(loader: loader)
         v.text = text
         return v
     }

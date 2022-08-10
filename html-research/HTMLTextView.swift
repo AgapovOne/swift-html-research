@@ -11,10 +11,15 @@ import Atributika
 
 final class HTMLTextView: UIView {
 
-    let textView = UITextView()
+    typealias HTMLLoader = (String) -> NSAttributedString
+    let loader: HTMLLoader
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    let textView = UITextView()
+    var heightConstraint: NSLayoutConstraint!
+
+    init(loader: @escaping HTMLLoader) {
+        self.loader = loader
+        super.init(frame: .zero)
         setup()
     }
 
@@ -24,10 +29,13 @@ final class HTMLTextView: UIView {
 
     private func setup() {
         addSubview(textView)
-        textView.autoresizingMask = [
-            .flexibleWidth,
-            .flexibleHeight
-        ]
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            textView.topAnchor.constraint(equalTo: topAnchor),
+            textView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            textView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            textView.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
     }
 
     override func layoutSubviews() {
@@ -42,46 +50,25 @@ final class HTMLTextView: UIView {
         }
     }
 
-    var tagsStyles: [Style] {
-        [
-            Style("b")
-                .font(.boldSystemFont(ofSize: 20))
-                .foregroundColor(.red),
-            Style("a")
-                .font(.monospacedSystemFont(ofSize: 24, weight: .heavy))
-                .foregroundColor(.brown),
-            Style("sub")
-                .baselineOffset(-10),
-            Style("sup")
-                .baselineOffset(10)
-        ]
-    }
-
     private func setText() {
         let now = Date.now
 
-        textView.attributedText = text
-            .style(tags: tagsStyles)
-            .attributedString
-        textView.textAlignment = .center
-
-        let size = textView.systemLayoutSizeFitting(CGSize(width: self.frame.width, height: UIView.layoutFittingCompressedSize.height), withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
-
-        let allText = textView.attributedText +
-        "\n\(size)"
-            .styleAll(.foregroundColor(.green))
-            .attributedString
-        + "\n\(now.distance(to: .now))".attributedString
-
-        textView.attributedText = allText
+        assign(
+            loader(text),
+            to: textView,
+            start: now,
+            width: frame.width
+        )
+        
     }
 }
 
 struct TextView: UIViewRepresentable {
     let text: String
+    let loader: HTMLTextView.HTMLLoader
 
     func makeUIView(context: Context) -> HTMLTextView {
-        let v = HTMLTextView(frame: .zero)
+        let v = HTMLTextView(loader: loader)
         v.text = text
         return v
     }
