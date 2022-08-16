@@ -17,8 +17,11 @@
 		211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075428A27C5900CCBB04 /* HTMLTextView.swift */; };
 		211E075828A27D6100CCBB04 /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = 211E075728A27D6100CCBB04 /* Atributika */; };
 		211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */; };
+		2147698328AA4A6400DA2C9B /* Parma in Frameworks */ = {isa = PBXBuildFile; productRef = 2147698228AA4A6400DA2C9B /* Parma */; };
+		2147698628AA5A5600DA2C9B /* MarkdownExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */; };
 		2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */; };
 		2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */; };
+		21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F388AD28ABC2CA00F900E7 /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +54,10 @@
 		211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		211E075428A27C5900CCBB04 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
 		211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAsyncTextView.swift; sourceTree = "<group>"; };
+		2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExamples.swift; sourceTree = "<group>"; };
 		2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAssign.swift; sourceTree = "<group>"; };
 		2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLExamples.swift; sourceTree = "<group>"; };
+		21F388AD28ABC2CA00F900E7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2147698328AA4A6400DA2C9B /* Parma in Frameworks */,
 				211E075828A27D6100CCBB04 /* Atributika in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,10 +112,12 @@
 			children = (
 				211E072A28A27BDC00CCBB04 /* html_researchApp.swift */,
 				211E072C28A27BDC00CCBB04 /* ContentView.swift */,
+				21F388AD28ABC2CA00F900E7 /* CollectionView.swift */,
 				211E075428A27C5900CCBB04 /* HTMLTextView.swift */,
 				211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */,
 				2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */,
 				2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */,
+				2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */,
 				211E072E28A27BDD00CCBB04 /* Assets.xcassets */,
 				211E073028A27BDD00CCBB04 /* Preview Content */,
 			);
@@ -159,6 +167,7 @@
 			name = "html-research";
 			packageProductDependencies = (
 				211E075728A27D6100CCBB04 /* Atributika */,
+				2147698228AA4A6400DA2C9B /* Parma */,
 			);
 			productName = "html-research";
 			productReference = 211E072728A27BDC00CCBB04 /* html-research.app */;
@@ -234,6 +243,8 @@
 			mainGroup = 211E071E28A27BDC00CCBB04;
 			packageReferences = (
 				211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */,
+				2147698028AA499100DA2C9B /* XCRemoteSwiftPackageReference "swift-markdown" */,
+				2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */,
 			);
 			productRefGroup = 211E072828A27BDC00CCBB04 /* Products */;
 			projectDirPath = "";
@@ -280,8 +291,10 @@
 				211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */,
 				2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */,
 				211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */,
+				2147698628AA5A5600DA2C9B /* MarkdownExamples.swift in Sources */,
 				211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */,
 				211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */,
+				21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */,
 				2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +630,22 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		2147698028AA499100DA2C9B /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dasautoooo/Parma";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -624,6 +653,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */;
 			productName = Atributika;
+		};
+		2147698228AA4A6400DA2C9B /* Parma */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */;
+			productName = Parma;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

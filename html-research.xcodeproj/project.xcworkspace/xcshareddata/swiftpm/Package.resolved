@@ -8,6 +8,42 @@
         "revision" : "d018897afbd55d9065ef859650585bac890ada7e",
         "version" : "4.10.1"
       }
+    },
+    {
+      "identity" : "down",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iwasrobbed/Down",
+      "state" : {
+        "revision" : "f34b166be1f1db4aa8f573067e901d72f2a6be57",
+        "version" : "0.11.0"
+      }
+    },
+    {
+      "identity" : "parma",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dasautoooo/Parma",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3c8b431fd5ad3cf675c60d0aa89f011cbcbb036c"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-cmark.git",
+      "state" : {
+        "branch" : "gfm",
+        "revision" : "476f7b4fcf12eba381b4aaed8987006fd8fcec9c"
+      }
+    },
+    {
+      "identity" : "swift-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-markdown.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "52563fc74a540b29854fde20e836b27394be2749"
+      }
     }
   ],
   "version" : 2
