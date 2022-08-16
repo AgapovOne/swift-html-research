@@ -21,6 +21,10 @@
 		2147698628AA5A5600DA2C9B /* MarkdownExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */; };
 		2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */; };
 		2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */; };
+		21AD9E1F28AC1D3D005DFCB1 /* HTML+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E1E28AC1D3D005DFCB1 /* HTML+Sync.swift */; };
+		21AD9E2128AC1D43005DFCB1 /* HTML+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E2028AC1D43005DFCB1 /* HTML+Async.swift */; };
+		21AD9E2328AC1D49005DFCB1 /* HTML+Atributika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */; };
+		21AD9E2528AC1D7D005DFCB1 /* Markdown+Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */; };
 		21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F388AD28ABC2CA00F900E7 /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,10 @@
 		2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownExamples.swift; sourceTree = "<group>"; };
 		2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAssign.swift; sourceTree = "<group>"; };
 		2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLExamples.swift; sourceTree = "<group>"; };
+		21AD9E1E28AC1D3D005DFCB1 /* HTML+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+Sync.swift"; sourceTree = "<group>"; };
+		21AD9E2028AC1D43005DFCB1 /* HTML+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+Async.swift"; sourceTree = "<group>"; };
+		21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+Atributika.swift"; sourceTree = "<group>"; };
+		21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Markdown+Down.swift"; sourceTree = "<group>"; };
 		21F388AD28ABC2CA00F900E7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +120,7 @@
 			children = (
 				211E072A28A27BDC00CCBB04 /* html_researchApp.swift */,
 				211E072C28A27BDC00CCBB04 /* ContentView.swift */,
+				21AD9E1D28AC1D34005DFCB1 /* Renderers */,
 				21F388AD28ABC2CA00F900E7 /* CollectionView.swift */,
 				211E075428A27C5900CCBB04 /* HTMLTextView.swift */,
 				211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */,
@@ -147,6 +156,17 @@
 				211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */,
 			);
 			path = "html-researchUITests";
+			sourceTree = "<group>";
+		};
+		21AD9E1D28AC1D34005DFCB1 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				21AD9E1E28AC1D3D005DFCB1 /* HTML+Sync.swift */,
+				21AD9E2028AC1D43005DFCB1 /* HTML+Async.swift */,
+				21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */,
+				21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */,
+			);
+			path = Renderers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +312,12 @@
 				2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */,
 				211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */,
 				2147698628AA5A5600DA2C9B /* MarkdownExamples.swift in Sources */,
+				21AD9E2528AC1D7D005DFCB1 /* Markdown+Down.swift in Sources */,
 				211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */,
+				21AD9E2128AC1D43005DFCB1 /* HTML+Async.swift in Sources */,
+				21AD9E1F28AC1D3D005DFCB1 /* HTML+Sync.swift in Sources */,
 				211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */,
+				21AD9E2328AC1D49005DFCB1 /* HTML+Atributika.swift in Sources */,
 				21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */,
 				2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */,
 			);
