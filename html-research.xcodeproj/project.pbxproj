@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21198CEB28AD0FCF00D87006 /* Ashton in Frameworks */ = {isa = PBXBuildFile; productRef = 21198CEA28AD0FCF00D87006 /* Ashton */; };
+		21198CED28AD0FD900D87006 /* HTML+Ashton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21198CEC28AD0FD900D87006 /* HTML+Ashton.swift */; };
+		21198CF028AD113D00D87006 /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 21198CEF28AD113D00D87006 /* SwiftRichString */; };
+		21198CF228AD114800D87006 /* HTML+RichString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21198CF128AD114800D87006 /* HTML+RichString.swift */; };
 		211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E072A28A27BDC00CCBB04 /* html_researchApp.swift */; };
 		211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E072C28A27BDC00CCBB04 /* ContentView.swift */; };
 		211E072F28A27BDD00CCBB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211E072E28A27BDD00CCBB04 /* Assets.xcassets */; };
@@ -20,7 +24,6 @@
 		2147698328AA4A6400DA2C9B /* Parma in Frameworks */ = {isa = PBXBuildFile; productRef = 2147698228AA4A6400DA2C9B /* Parma */; };
 		2147698628AA5A5600DA2C9B /* MarkdownExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147698528AA5A5600DA2C9B /* MarkdownExamples.swift */; };
 		216B26C328ACC0D600069914 /* Markdown+Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B26C228ACC0D600069914 /* Markdown+Apple.swift */; };
-		216B26C628ACC11C00069914 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 216B26C528ACC11C00069914 /* Markdown */; };
 		216B26C828ACCA6700069914 /* Markdown+15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B26C728ACCA6700069914 /* Markdown+15.swift */; };
 		2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172F22B28A36FFF003EFEE2 /* HTMLAssign.swift */; };
 		2195F7BC28A2E89A00A0E774 /* HTMLExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2195F7BB28A2E89A00A0E774 /* HTMLExamples.swift */; };
@@ -49,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21198CEC28AD0FD900D87006 /* HTML+Ashton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+Ashton.swift"; sourceTree = "<group>"; };
+		21198CF128AD114800D87006 /* HTML+RichString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+RichString.swift"; sourceTree = "<group>"; };
 		211E072728A27BDC00CCBB04 /* html-research.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "html-research.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211E072A28A27BDC00CCBB04 /* html_researchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchApp.swift; sourceTree = "<group>"; };
 		211E072C28A27BDC00CCBB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,9 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216B26C628ACC11C00069914 /* Markdown in Frameworks */,
 				2147698328AA4A6400DA2C9B /* Parma in Frameworks */,
+				21198CF028AD113D00D87006 /* SwiftRichString in Frameworks */,
 				211E075828A27D6100CCBB04 /* Atributika in Frameworks */,
+				21198CEB28AD0FCF00D87006 /* Ashton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,8 @@
 				21AD9E1E28AC1D3D005DFCB1 /* HTML+Sync.swift */,
 				21AD9E2028AC1D43005DFCB1 /* HTML+Async.swift */,
 				21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */,
+				21198CEC28AD0FD900D87006 /* HTML+Ashton.swift */,
+				21198CF128AD114800D87006 /* HTML+RichString.swift */,
 				21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */,
 				216B26C228ACC0D600069914 /* Markdown+Apple.swift */,
 				216B26C728ACCA6700069914 /* Markdown+15.swift */,
@@ -204,7 +212,8 @@
 			packageProductDependencies = (
 				211E075728A27D6100CCBB04 /* Atributika */,
 				2147698228AA4A6400DA2C9B /* Parma */,
-				216B26C528ACC11C00069914 /* Markdown */,
+				21198CEA28AD0FCF00D87006 /* Ashton */,
+				21198CEF28AD113D00D87006 /* SwiftRichString */,
 			);
 			productName = "html-research";
 			productReference = 211E072728A27BDC00CCBB04 /* html-research.app */;
@@ -282,6 +291,8 @@
 				211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */,
 				2147698028AA499100DA2C9B /* XCRemoteSwiftPackageReference "swift-markdown" */,
 				2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */,
+				21198CE928AD0FCF00D87006 /* XCRemoteSwiftPackageReference "Ashton" */,
+				21198CEE28AD113D00D87006 /* XCRemoteSwiftPackageReference "SwiftRichString" */,
 			);
 			productRefGroup = 211E072828A27BDC00CCBB04 /* Products */;
 			projectDirPath = "";
@@ -334,9 +345,11 @@
 				211E072D28A27BDC00CCBB04 /* ContentView.swift in Sources */,
 				21AD9E2128AC1D43005DFCB1 /* HTML+Async.swift in Sources */,
 				21AD9E1F28AC1D3D005DFCB1 /* HTML+Sync.swift in Sources */,
+				21198CED28AD0FD900D87006 /* HTML+Ashton.swift in Sources */,
 				211E072B28A27BDC00CCBB04 /* html_researchApp.swift in Sources */,
 				21AD9E2328AC1D49005DFCB1 /* HTML+Atributika.swift in Sources */,
 				21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */,
+				21198CF228AD114800D87006 /* HTML+RichString.swift in Sources */,
 				216B26C828ACCA6700069914 /* Markdown+15.swift in Sources */,
 				2172F22C28A36FFF003EFEE2 /* HTMLAssign.swift in Sources */,
 			);
@@ -665,6 +678,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		21198CE928AD0FCF00D87006 /* XCRemoteSwiftPackageReference "Ashton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IdeasOnCanvas/Ashton.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		21198CEE28AD113D00D87006 /* XCRemoteSwiftPackageReference "SwiftRichString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftRichString.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/psharanda/Atributika.git";
@@ -692,6 +721,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		21198CEA28AD0FCF00D87006 /* Ashton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21198CE928AD0FCF00D87006 /* XCRemoteSwiftPackageReference "Ashton" */;
+			productName = Ashton;
+		};
+		21198CEF28AD113D00D87006 /* SwiftRichString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21198CEE28AD113D00D87006 /* XCRemoteSwiftPackageReference "SwiftRichString" */;
+			productName = SwiftRichString;
+		};
 		211E075728A27D6100CCBB04 /* Atributika */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 211E075628A27D6100CCBB04 /* XCRemoteSwiftPackageReference "Atributika" */;
@@ -701,11 +740,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */;
 			productName = Parma;
-		};
-		216B26C528ACC11C00069914 /* Markdown */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2147698028AA499100DA2C9B /* XCRemoteSwiftPackageReference "swift-markdown" */;
-			productName = Markdown;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

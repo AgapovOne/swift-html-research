@@ -17,7 +17,7 @@ struct ContentView: View {
         var id: Self { self }
     }
     enum MarkdownRenderer: String, CaseIterable, Identifiable {
-        case downCustom, downDefault, native15, lib
+        case downCustom, downDefault, native15
         var id: Self { self }
     }
 
@@ -88,7 +88,7 @@ struct ContentView: View {
                     NSAttributedString.loadFromHTML(
                         string: string
                     ) { string, keys, error in
-                        completion(string!)
+                        completion(string ?? NSAttributedString())
                     }
                 }
             case .atributika:
@@ -111,13 +111,9 @@ struct ContentView: View {
                 TextView(text: markdown) {
                     down($0, styler: DefaultDownStyler())
                 }
-            case .lib:
-                TextView(text: markdown) {
-                    swiftMarkdown($0)
-                }
             case .native15:
                 TextView(text: markdown) {
-                    nativeMarkdown()
+                    markdown15($0)
                 }
         }
     }

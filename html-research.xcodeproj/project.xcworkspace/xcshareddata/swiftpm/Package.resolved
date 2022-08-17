@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "ashton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IdeasOnCanvas/Ashton.git",
+      "state" : {
+        "revision" : "393c3d63eb79b92a88dbe894d2e13f3de6ffac76",
+        "version" : "2.0.8"
+      }
+    },
+    {
       "identity" : "atributika",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/psharanda/Atributika.git",
@@ -43,6 +52,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "52563fc74a540b29854fde20e836b27394be2749"
+      }
+    },
+    {
+      "identity" : "swiftrichstring",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftRichString.git",
+      "state" : {
+        "revision" : "9bf4b5af6bb4386865636fc504d6c588c2b65040",
+        "version" : "3.7.2"
       }
     }
   ],
