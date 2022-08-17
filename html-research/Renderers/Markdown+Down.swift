@@ -92,7 +92,7 @@ public class MyStyler: Styler {
     }
 }
 
-extension NSMutableAttributedString {
+private extension NSMutableAttributedString {
     func setAttributes(_ attrs: [NSAttributedString.Key: Any]) {
         setAttributes(attrs, range: NSRange(location: 0, length: length))
     }
