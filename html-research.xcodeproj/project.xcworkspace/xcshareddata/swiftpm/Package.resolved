@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "bonmot",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Rightpoint/BonMot.git",
+      "state" : {
+        "revision" : "2df34a28c97e2413c44a7be70b6dd15adf783baf",
+        "version" : "6.1.1"
+      }
+    },
+    {
       "identity" : "down",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iwasrobbed/Down",

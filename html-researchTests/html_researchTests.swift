@@ -10,9 +10,14 @@ import XCTest
 
 class html_researchTests: XCTestCase {
 
+    var options: XCTMeasureOptions!
+    override func setUp() {
+        super.setUp()
+        options = XCTMeasureOptions()
+        options.iterationCount = 1000
+    }
+
     func testPerformanceAtributika() throws {
-        let options = XCTMeasureOptions()
-        options.iterationCount = 100
         measure(options: options) {
             htmlExamples().forEach {
                 $0.style(tags: Atributika.tagsStyles)
@@ -22,8 +27,6 @@ class html_researchTests: XCTestCase {
     }
 
     func testPerformanceAshton() throws {
-        let options = XCTMeasureOptions()
-        options.iterationCount = 100
         measure(options: options) {
             htmlExamples().forEach {
                 ashton($0)
@@ -32,8 +35,6 @@ class html_researchTests: XCTestCase {
     }
 
     func testPerformanceRich() throws {
-        let options = XCTMeasureOptions()
-        options.iterationCount = 100
         measure(options: options) {
             htmlExamples().forEach {
                 rich($0)
@@ -42,8 +43,6 @@ class html_researchTests: XCTestCase {
     }
 
     func testPerformanceSync() throws {
-        let options = XCTMeasureOptions()
-        options.iterationCount = 100
         measure(options: options) {
             htmlExamples().forEach {
                 NSAttributedString(htmlString: $0)
@@ -52,8 +51,6 @@ class html_researchTests: XCTestCase {
     }
 
     func testPerformanceAsync() throws {
-        let options = XCTMeasureOptions()
-        options.iterationCount = 100
         measure(options: options) {
             htmlExamples().forEach {
                 let exp = expectation(description: "async method")
@@ -61,6 +58,14 @@ class html_researchTests: XCTestCase {
                     exp.fulfill()
                 }
                 wait(for: [exp], timeout: 200)
+            }
+        }
+    }
+
+    func testPerformanceBonmot() throws {
+        measure(options: options) {
+            htmlExamples().forEach {
+                bonmot($0)
             }
         }
     }

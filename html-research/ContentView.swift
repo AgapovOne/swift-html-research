@@ -13,7 +13,7 @@ struct ContentView: View {
         var id: Self { self }
     }
     enum HTMLRenderer: String, CaseIterable, Identifiable {
-        case atributika, sync, async
+        case atributika, sync, async, bonmot, ashton
         var id: Self { self }
     }
     enum MarkdownRenderer: String, CaseIterable, Identifiable {
@@ -22,7 +22,7 @@ struct ContentView: View {
     }
 
     @State private var format: Format = .html
-    @State private var selectedHTMLRenderer: HTMLRenderer = .async
+    @State private var selectedHTMLRenderer: HTMLRenderer = .bonmot
     @State private var selectedMarkdownRenderer: MarkdownRenderer = .downCustom
 
     var body: some View {
@@ -96,6 +96,15 @@ struct ContentView: View {
                     $0
                         .style(tags: Atributika.tagsStyles)
                         .attributedString
+                }
+
+            case .ashton:
+                TextView(text: html) {
+                    ashton($0)
+                }
+            case .bonmot:
+                TextView(text: html) {
+                    bonmot($0)
                 }
         }
     }
