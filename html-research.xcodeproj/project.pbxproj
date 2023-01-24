@@ -32,17 +32,13 @@
 		21AD9E2328AC1D49005DFCB1 /* HTML+Atributika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */; };
 		21AD9E2528AC1D7D005DFCB1 /* Markdown+Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */; };
 		21F388AE28ABC2CA00F900E7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F388AD28ABC2CA00F900E7 /* CollectionView.swift */; };
+		239EED2D297F068D009E450E /* XCTestDynamicOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = 239EED2C297F068D009E450E /* XCTestDynamicOverlay */; };
+		239EED32297FA1C5009E450E /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EED31297FA1C5009E450E /* SnapshotTests.swift */; };
+		239EED34297FA605009E450E /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 239EED33297FA605009E450E /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		211E073828A27BDD00CCBB04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 211E071F28A27BDC00CCBB04 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 211E072628A27BDC00CCBB04;
-			remoteInfo = "html-research";
-		};
-		211E074228A27BDD00CCBB04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 211E071F28A27BDC00CCBB04 /* Project object */;
 			proxyType = 1;
@@ -74,6 +70,7 @@
 		21AD9E2228AC1D49005DFCB1 /* HTML+Atributika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+Atributika.swift"; sourceTree = "<group>"; };
 		21AD9E2428AC1D7D005DFCB1 /* Markdown+Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Markdown+Down.swift"; sourceTree = "<group>"; };
 		21F388AD28ABC2CA00F900E7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		239EED31297FA1C5009E450E /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +82,7 @@
 				2147698328AA4A6400DA2C9B /* Parma in Frameworks */,
 				21198CF028AD113D00D87006 /* SwiftRichString in Frameworks */,
 				211E075828A27D6100CCBB04 /* Atributika in Frameworks */,
+				239EED2D297F068D009E450E /* XCTestDynamicOverlay in Frameworks */,
 				21198CEB28AD0FCF00D87006 /* Ashton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,13 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		211E073E28A27BDD00CCBB04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				239EED34297FA605009E450E /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				211E073B28A27BDD00CCBB04 /* html_researchTests.swift */,
+				239EED31297FA1C5009E450E /* SnapshotTests.swift */,
 			);
 			path = "html-researchTests";
 			sourceTree = "<group>";
@@ -204,6 +197,7 @@
 				21198CEA28AD0FCF00D87006 /* Ashton */,
 				21198CEF28AD113D00D87006 /* SwiftRichString */,
 				211FA4B228AF6E620054E343 /* BonMot */,
+				239EED2C297F068D009E450E /* XCTestDynamicOverlay */,
 			);
 			productName = "html-research";
 			productReference = 211E072728A27BDC00CCBB04 /* html-research.app */;
@@ -223,6 +217,9 @@
 				211E073928A27BDD00CCBB04 /* PBXTargetDependency */,
 			);
 			name = "html-researchTests";
+			packageProductDependencies = (
+				239EED33297FA605009E450E /* SnapshotTesting */,
+			);
 			productName = "html-researchTests";
 			productReference = 211E073728A27BDD00CCBB04 /* html-researchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -244,10 +241,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 211E072628A27BDC00CCBB04;
 					};
-					211E074028A27BDD00CCBB04 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 211E072628A27BDC00CCBB04;
-					};
 				};
 			};
 			buildConfigurationList = 211E072228A27BDC00CCBB04 /* Build configuration list for PBXProject "html-research" */;
@@ -266,6 +259,8 @@
 				21198CE928AD0FCF00D87006 /* XCRemoteSwiftPackageReference "Ashton" */,
 				21198CEE28AD113D00D87006 /* XCRemoteSwiftPackageReference "SwiftRichString" */,
 				211FA4B128AF6E620054E343 /* XCRemoteSwiftPackageReference "BonMot" */,
+				239EED2B297F068D009E450E /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */,
+				239EED2E297FA1B6009E450E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 211E072828A27BDC00CCBB04 /* Products */;
 			projectDirPath = "";
@@ -288,13 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		211E073528A27BDD00CCBB04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		211E073F28A27BDD00CCBB04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211E073C28A27BDD00CCBB04 /* html_researchTests.swift in Sources */,
+				239EED32297FA1C5009E450E /* SnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +332,6 @@
 			isa = PBXTargetDependency;
 			target = 211E072628A27BDC00CCBB04 /* html-research */;
 			targetProxy = 211E073828A27BDD00CCBB04 /* PBXContainerItemProxy */;
-		};
-		211E074328A27BDD00CCBB04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 211E072628A27BDC00CCBB04 /* html-research */;
-			targetProxy = 211E074228A27BDD00CCBB04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -564,42 +548,6 @@
 			};
 			name = Release;
 		};
-		211E075228A27BDD00CCBB04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 79NBZML2KJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agapovco.html-researchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "html-research";
-			};
-			name = Debug;
-		};
-		211E075328A27BDD00CCBB04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 79NBZML2KJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agapovco.html-researchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "html-research";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,15 +574,6 @@
 			buildConfigurations = (
 				211E074F28A27BDD00CCBB04 /* Debug */,
 				211E075028A27BDD00CCBB04 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		211E075128A27BDD00CCBB04 /* Build configuration list for PBXNativeTarget "html-researchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				211E075228A27BDD00CCBB04 /* Debug */,
-				211E075328A27BDD00CCBB04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -690,6 +629,22 @@
 				kind = branch;
 			};
 		};
+		239EED2B297F068D009E450E /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/xctest-dynamic-overlay.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		239EED2E297FA1B6009E450E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -717,6 +672,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2147698128AA4A6400DA2C9B /* XCRemoteSwiftPackageReference "Parma" */;
 			productName = Parma;
+		};
+		239EED2C297F068D009E450E /* XCTestDynamicOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 239EED2B297F068D009E450E /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */;
+			productName = XCTestDynamicOverlay;
+		};
+		239EED33297FA605009E450E /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 239EED2E297FA1B6009E450E /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

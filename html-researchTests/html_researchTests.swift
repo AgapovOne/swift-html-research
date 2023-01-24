@@ -62,10 +62,20 @@ class html_researchTests: XCTestCase {
         }
     }
 
+    func test_x() throws {
+        try htmlExamples().forEach {
+            XCTAssertNoThrow(try bonmot($0.escapeWithUnicodeEntities()))
+        }
+    }
+
     func testPerformanceBonmot() throws {
         measure(options: options) {
             htmlExamples().forEach {
-                bonmot($0)
+                do {
+                    XCTAssertNoThrow(try bonmot($0))
+                } catch {
+                    XCTFail("hey")
+                }
             }
         }
     }

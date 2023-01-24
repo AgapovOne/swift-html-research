@@ -104,7 +104,7 @@ struct ContentView: View {
                 }
             case .bonmot:
                 TextView(text: html) {
-                    bonmot($0)
+                    try! bonmot($0)
                 }
         }
     }

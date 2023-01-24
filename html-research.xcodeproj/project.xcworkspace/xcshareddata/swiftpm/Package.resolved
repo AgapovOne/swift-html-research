@@ -64,12 +64,30 @@
       }
     },
     {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "revision" : "cef5b3f6f11781dd4591bdd1dd0a3d22bd609334",
+        "version" : "1.11.0"
+      }
+    },
+    {
       "identity" : "swiftrichstring",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/malcommac/SwiftRichString.git",
       "state" : {
         "revision" : "9bf4b5af6bb4386865636fc504d6c588c2b65040",
         "version" : "3.7.2"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay.git",
+      "state" : {
+        "revision" : "16b23a295fa322eb957af98037f86791449de60f",
+        "version" : "0.8.1"
       }
     }
   ],
