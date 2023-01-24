@@ -16,8 +16,6 @@
 		211E072F28A27BDD00CCBB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211E072E28A27BDD00CCBB04 /* Assets.xcassets */; };
 		211E073228A27BDD00CCBB04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211E073128A27BDD00CCBB04 /* Preview Assets.xcassets */; };
 		211E073C28A27BDD00CCBB04 /* html_researchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E073B28A27BDD00CCBB04 /* html_researchTests.swift */; };
-		211E074628A27BDD00CCBB04 /* html_researchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E074528A27BDD00CCBB04 /* html_researchUITests.swift */; };
-		211E074828A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */; };
 		211E075528A27C5900CCBB04 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075428A27C5900CCBB04 /* HTMLTextView.swift */; };
 		211E075828A27D6100CCBB04 /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = 211E075728A27D6100CCBB04 /* Atributika */; };
 		211E075A28A285A900CCBB04 /* HTMLAsyncTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */; };
@@ -63,9 +61,6 @@
 		211E073128A27BDD00CCBB04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		211E073728A27BDD00CCBB04 /* html-researchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "html-researchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211E073B28A27BDD00CCBB04 /* html_researchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchTests.swift; sourceTree = "<group>"; };
-		211E074128A27BDD00CCBB04 /* html-researchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "html-researchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		211E074528A27BDD00CCBB04 /* html_researchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITests.swift; sourceTree = "<group>"; };
-		211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = html_researchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		211E075428A27C5900CCBB04 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
 		211E075928A285A900CCBB04 /* HTMLAsyncTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLAsyncTextView.swift; sourceTree = "<group>"; };
 		211FA4B428AF6E740054E343 /* HTML+BonMot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTML+BonMot.swift"; sourceTree = "<group>"; };
@@ -116,7 +111,6 @@
 			children = (
 				211E072928A27BDC00CCBB04 /* html-research */,
 				211E073A28A27BDD00CCBB04 /* html-researchTests */,
-				211E074428A27BDD00CCBB04 /* html-researchUITests */,
 				211E072828A27BDC00CCBB04 /* Products */,
 				216B26C428ACC11C00069914 /* Frameworks */,
 			);
@@ -127,7 +121,6 @@
 			children = (
 				211E072728A27BDC00CCBB04 /* html-research.app */,
 				211E073728A27BDD00CCBB04 /* html-researchTests.xctest */,
-				211E074128A27BDD00CCBB04 /* html-researchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,15 +157,6 @@
 				211E073B28A27BDD00CCBB04 /* html_researchTests.swift */,
 			);
 			path = "html-researchTests";
-			sourceTree = "<group>";
-		};
-		211E074428A27BDD00CCBB04 /* html-researchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				211E074528A27BDD00CCBB04 /* html_researchUITests.swift */,
-				211E074728A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift */,
-			);
-			path = "html-researchUITests";
 			sourceTree = "<group>";
 		};
 		216B26C428ACC11C00069914 /* Frameworks */ = {
@@ -243,24 +227,6 @@
 			productReference = 211E073728A27BDD00CCBB04 /* html-researchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		211E074028A27BDD00CCBB04 /* html-researchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 211E075128A27BDD00CCBB04 /* Build configuration list for PBXNativeTarget "html-researchUITests" */;
-			buildPhases = (
-				211E073D28A27BDD00CCBB04 /* Sources */,
-				211E073E28A27BDD00CCBB04 /* Frameworks */,
-				211E073F28A27BDD00CCBB04 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				211E074328A27BDD00CCBB04 /* PBXTargetDependency */,
-			);
-			name = "html-researchUITests";
-			productName = "html-researchUITests";
-			productReference = 211E074128A27BDD00CCBB04 /* html-researchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -307,7 +273,6 @@
 			targets = (
 				211E072628A27BDC00CCBB04 /* html-research */,
 				211E073628A27BDD00CCBB04 /* html-researchTests */,
-				211E074028A27BDD00CCBB04 /* html-researchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -368,15 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				211E073C28A27BDD00CCBB04 /* html_researchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		211E073D28A27BDD00CCBB04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				211E074828A27BDD00CCBB04 /* html_researchUITestsLaunchTests.swift in Sources */,
-				211E074628A27BDD00CCBB04 /* html_researchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
